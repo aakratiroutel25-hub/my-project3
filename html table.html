@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+</head><body>
+  <h1>Registions Form</h1>
+<form action="http://127.0.0.1:5500/actio-page.php">
+  <label for="fname">First name:</label><input type="text" style="margin-left: 60px;" id="fname" name="fname"><br><br><label for="lname">Last name:</label><input type="text" style="margin-left: 61px;" id="lname" name="lname"><br><br><label for="fname">Fathers Name:</label><input type="text" style="margin-left: 40px;" id="fname" name="fname"><br><br><label for="fname">Mothers Name:</label><input type="text" style="margin-left: 37px;" id="fname" name="fname"><br><br><label for="fname">Addresh:</label><input type="test" style="margin-left: 80px;" id="fname" name="fname"><br><br><label for="fname">City:</label><input type="text" style="margin-left: 107px;" id="fname" name="fname"><br><br><label for="fname">Mobile No.:</label><input type="tel" style="margin-left: 65px;" id="tel" name="fname"><br><br><label for="date">Date of Birth:</label><input type="date" style="margin-left: 58px;" id="date" name="fname"><br><br><label for="fname">Email id:</label><input type="email" style="margin-left: 90px;" id="email" name="fname"><br><br><label for="fname">Date:</label><input type="date" style="margin-left: 113px;" id="date" name="fname"><br><br><button type="button" style="margin-left:110px;">Register</button><table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </table>
+  </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
